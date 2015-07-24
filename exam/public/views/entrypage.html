@@ -1,0 +1,15 @@
+<h2>Question List</h2>  &nbsp&nbsp <a href="#/" ng-click="logout()">Logout</a>
+<p><label>Search Question</label><input type="text" ng-model="test"></p><br>
+<p>In search field values will filtered based on Date,questions,answer ,category etc</p>
+<ul>
+	<li ng-repeat="u in question_details | filter:test " id="message{{$index}}">{{u.question_name}}
+		<!-- <button ng-click="edit_question($index,u._id,u.question_name)">Edit</button>
+		<button ng-click="remove_question($index,u._id)">remove</button> -->
+			<ol>
+			  <li>{{u.choise1}}</li>
+			  <li>{{u.choise2}}</li>
+			  <li>{{u.choise3}}</li>
+			  <li>{{u.choise4}}</li>
+			</ol>
+	</li>
+</ul>

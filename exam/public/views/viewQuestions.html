@@ -1,0 +1,13 @@
+<!-- <form id="submit-create-survey-form" name="submitCreateSurveyForm" ng-submit="addCategoryDetail() " >
+	<input ng-model="text" required>
+    <button type="submit" >Create !</button>
+     <a href="#/admin">Home</a><br />
+</form>
+ -->
+<h2>Question List</h2>
+<ul>
+	<li ng-repeat="u in question_details" id="message{{$index}}">{{u.question_name}}
+		<button ng-click="edit_question($index,u._id,u.question_name)">Edit</button>
+		<button ng-click="remove_question($index,u._id)">remove</button>
+	</li>
+</ul>

@@ -1,0 +1,33 @@
+<form id="submit-create-survey-form" name="submitCreateSurveyForm" ng-submit="edit_singlequestion() " >
+	<!-- <h2>Edit Category</h2>
+	<input ng-model="text[0].category_name" required>
+    <button type="submit" >Edit data !</button>
+     <a href="#/admin">Home</a><br /> -->
+
+
+     <h1>Editing Question </h1>
+	<label>Question</label>
+	<input type="text" ng-model="text[0].question_name" required><br><br>
+	<!-- <label>Select category</label>
+
+	<select ng-options="o.category_name for o in cat_details" ng-model="selectedCategory" required>{{u.category_name}}</select><br><br> -->
+	<label>Category Name</label><input type="text" ng-model="text[0].category_name" ng-disabled="text[0].category_name" required><br><br>
+	<label>choise 1</label>
+	<input type="text" ng-model="text[0].choise1" required><br><br>
+
+	<label>choise 2</label>
+	<input type="text" ng-model="text[0].choise2" required><br><br>
+
+	<label>choise 3</label>
+	<input type="text" ng-model="text[0].choise3" required><br><br>
+
+	<label>choise 4</label>
+	<input type="text" ng-model="text[0].choise4" required><br><br>
+
+ 	Select your Correct Answer  <br/>
+       <input type="radio" name="fav" ng-model="text[0].correct_answer" value="1" ng-click="getresult($event)" ng-required="!color"/>choise1<br/>
+        <input type="radio" name="fav" ng-model="text[0].correct_answer" value="2" ng-click="getresult($event)" ng-required="!color"/>choise2<br/>
+        <input type="radio" name="fav" ng-model="text[0].correct_answer" value="3" ng-click="getresult($event)" ng-required="!color"/>choise3<br/>
+        <input type="radio" name="fav" ng-model="text[0].correct_answer" value="4" ng-click="getresult($event)" ng-required="!color"/>choise4<br/>
+	<button type="submit" >Edit IT!</button>
+</form>

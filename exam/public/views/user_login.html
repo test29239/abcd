@@ -1,0 +1,19 @@
+<h1>User Login</h1>
+<form id="submit-create-survey-form" name="submitCreateSurveyForm" ng-submit="login_user()">
+  <p>
+    <label class="control-label">Username</label>
+  	<input type="text" placeholder="Username" ng-model="username" required/>
+  <!--  <input type="email" ng-model="email" placeholder="email" required/><br><br> -->
+  </p>
+  <p>
+    <label class="control-label">Password</label>
+  	<input type="password" placeholder="Password" ng-model="password" required/><br/>
+  </p>
+  <p>
+    <button type="submit" class="btn btn-primary">Login</button>&nbsp&nbsp
+  </p>
+  <p>
+  </p>
+</form>
+{{message}}
+    <button type="submit" class="btn btn-primary" ng-click="registration()">Register</button>

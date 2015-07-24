@@ -1,0 +1,32 @@
+<form id="submit-create-survey-form" name="submitCreateSurveyForm" ng-submit="add_question_data() " >
+	<h1>Adding Question </h1>
+	<label>Question</label>
+	<input type="text" ng-model="question" required><br><br>
+	<label>Select category</label>
+
+	<select ng-options="o.category_name for o in cat_details" ng-model="selectedCategory" required>{{u.category_name}}</select><br><br>
+
+	<label>choise 1</label>
+	<input type="text" ng-model="choise1" required><br><br>
+
+	<label>choise 2</label>
+	<input type="text" ng-model="choise2" required><br><br>
+
+	<label>choise 3</label>
+	<input type="text" ng-model="choise3" required><br><br>
+
+	<label>choise 4</label>
+	<input type="text" ng-model="choise4" required><br><br>
+
+ 	Select your Correct Answer  <br/>
+       <input type="radio" name="fav" ng-model="choosing_answer" value="1" ng-click="getresult($event)" ng-required="!color"/>choise1<br/>
+        <input type="radio" name="fav" ng-model="choosing_answer" value="2" ng-click="getresult($event)" ng-required="!color"/>choise2<br/>
+        <input type="radio" name="fav" ng-model="choosing_answer" value="3" ng-click="getresult($event)" ng-required="!color"/>choise3<br/>
+        <input type="radio" name="fav" ng-model="choosing_answer" value="4" ng-click="getresult($event)" ng-required="!color"/>choise4<br/>
+	<button type="submit" >Add!</button>
+</form>
+
+
+<!-- $scope.getFood = function(obj){
+        $scope.food = obj.target.value;
+    } -->
