@@ -4,7 +4,8 @@ var path = require('path');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/exam');
+//mongoose.connect('mongodb://localhost/exam');
+mongoose.connect('mongodb://exam:exam123@ds047742.mongolab.com:47742/exam')
 var db = require('./schema/db');
 var db1 = require('./schema/questionschema');
 var admin = require('./controllers/admin');
